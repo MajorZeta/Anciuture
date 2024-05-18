@@ -48,7 +48,7 @@ namespace juego {
         ActorPersonaje * Patrek {};
         ActorPersonaje * Pirate {};
         ActorPersonaje * Shaolin {};
-        ActorPersonaje * PilotoMecha{};
+        ActorPersonaje * PilotoMecha {};
         /*******************************************************************************************
         /******************************************************************************************/
  
