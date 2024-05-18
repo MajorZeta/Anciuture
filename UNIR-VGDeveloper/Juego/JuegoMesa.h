@@ -37,11 +37,13 @@ namespace juego {
         la lista de personajes diseñados para el juego.
 
         *******************************************************************************************/
-        ActorPersonaje * Aristo {};
+        //ActorPersonaje * Aristo {};       //LUCASGG
+        ActorPersonaje * TecMed{};          //LUCASGG
         ActorPersonaje * Harja {};
         ActorPersonaje * Hunter {};
         ActorPersonaje * Thief {};
-        ActorPersonaje * Miner {};
+        //ActorPersonaje * Miner {};        //LUCASGG
+        ActorPersonaje* Amazona{};          //LUCASGG
         ActorPersonaje * Male {};
         ActorPersonaje * Patrek {};
         ActorPersonaje * Pirate {};
@@ -87,6 +89,13 @@ namespace juego {
         Habilidad * misil {};
         Habilidad * lanzaLaser {};
         Habilidad * barricadaRetractil{};
+
+        Habilidad * campoDeCuracion{};             //LUCASGG
+        Habilidad * drogaDeCombate{};              //LUCASGG
+        Habilidad * ataqueBisturi{};               //LUCASGG
+        Habilidad * ataqueArcoConVeneno{};         //LUCASGG
+        Habilidad * ataqueCabalgado{};             //LUCASGG
+        Habilidad * defensaConEscudo{};            //LUCASGG
         /*******************************************************************************************
         /******************************************************************************************/
 
@@ -122,6 +131,14 @@ namespace juego {
         TipoDefensa * defensaMagica {};
         TipoDano *    danoFisico {};
         TipoDano *    danoMagico {};
+
+        TipoAtaque* ataqueQuirurgico{};              //LUCASGG
+        TipoAtaque* ataqueArcoVenenoso{};            //LUCASGG
+        TipoAtaque* ataqueTajoCabalgado{};           //LUCASGG
+        TipoDefensa* defensaQuirurgica{};            //LUCASGG
+        TipoDefensa* defensaArcoVenenoso{};          //LUCASGG
+        TipoDefensa* defensaTajoCabalgado{};         //LUCASGG
+
         /*******************************************************************************************
         /******************************************************************************************/
 
