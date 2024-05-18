@@ -1,0 +1,38 @@
+﻿  pch.cpp
+  ActorMusica.cpp
+  CuadroIndica.cpp
+  EscritorAyuda.cpp
+  EstadoJuegoEquipo.cpp
+  EstadoJuegoLibreDoble.cpp
+  EstadoJuegoPares.cpp
+  Excepciones.cpp
+  EstadoJuegoComun.cpp
+  GradoEfectividad.cpp
+  Habilidad.cpp
+  ListadoAyuda.cpp
+  ActorTablero.cpp
+  ActorPersonaje.cpp
+  JuegoMesaBase.cpp
+  PresenciaHabilidades.cpp
+  PresenciaPersonaje.cpp
+  PresenciaTablero.cpp
+  ModoJuegoComun.cpp
+  ModoJuegoEquipo.cpp
+  ModoJuegoLibreDoble.cpp
+  Generando código...
+  Compilando...
+  ModoJuegoPares.cpp
+  RejillaTablero.cpp
+  PresenciaActuante.cpp
+  CalculoCaminos.cpp
+  ModoJuegoBase.cpp
+  SistemaAtaque.cpp
+  SucesosJuegoComun.cpp
+  SucesosJuegoEquipo.cpp
+  SucesosJuegoLibreDoble.cpp
+  SucesosJuegoPares.cpp
+  TipoEstadistica.cpp
+  ValidacionJuego.cpp
+  VistaCaminoCeldas.cpp
+  Generando código...
+  Tapete.vcxproj -> D:\Projects\GitHub\Anciuture\UNIR-VGDeveloper\Tapete\x64\Debug\Tapete.lib

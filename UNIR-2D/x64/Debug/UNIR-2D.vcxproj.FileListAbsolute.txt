@@ -1,0 +1,2 @@
+C:\Angelote\UNIR\Clases\Proyecto Grupal I\UNIRVG-Developer\UNIR-2D\x64\Debug\UNIR-2D.lib
+D:\Documents\UNIR\Curso Diseño y Desarrollo Videojuegos\Proyecto Grupal I\Proyectos\Juego\UNIR-2D\x64\Debug\UNIR-2D.lib
