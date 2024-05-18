@@ -537,65 +537,65 @@ namespace juego {
         //
         //Miner  = new ActorPersonaje {this, LadoTablero::Izquierda, 0, L"Miner"};              //LUCASGG
         Amazona = new ActorPersonaje{ this, LadoTablero::Izquierda, 0, L"Amazona" };            //LUCASGG
-        Male   = new ActorPersonaje {this, LadoTablero::Izquierda, 1, L"Male"};
+        Samurai = new ActorPersonaje {this, LadoTablero::Izquierda, 1, L"Samurai"};             //Manuel
         Patrek = new ActorPersonaje {this, LadoTablero::Izquierda, 2, L"Patrek"};
         //Pirate = new ActorPersonaje {this, LadoTablero::Izquierda, 3, L"Pirate"};
         Shaolin= new ActorPersonaje { this, LadoTablero::Izquierda,3, L"Shaolin" };
         //Aristo = new ActorPersonaje {this, LadoTablero::Derecha,   0, L"Aristo"};             //LUCASGG
         TecMed = new ActorPersonaje{ this, LadoTablero::Derecha,   0, L"TecMed" };              //LUCASGG
-        Harja  = new ActorPersonaje {this, LadoTablero::Derecha,   1, L"Harja"};
+        Franco  = new ActorPersonaje {this, LadoTablero::Derecha,   1, L"Franco"};              //Manuel
         Hunter = new ActorPersonaje {this, LadoTablero::Derecha,   2, L"Hunter"};
         //Thief  = new ActorPersonaje {this, LadoTablero::Derecha,   3, L"Thief"};
         PilotoMecha = new ActorPersonaje { this, LadoTablero::Derecha,  3, L"Piloto"};
         //
         //Miner ->ponArchivoRetrato (carpeta_retratos_juego + "miner1_75.png");                 //LUCASGG
         Amazona->ponArchivoRetrato(carpeta_retratos_juego + "Amazona.png");                     //LUCASGG
-        Male  ->ponArchivoRetrato (carpeta_retratos_juego + "male1_75.png");
+        Samurai->ponArchivoRetrato (carpeta_retratos_juego + "Samurai.png");                    //Manuel
         Patrek->ponArchivoRetrato (carpeta_retratos_juego + "patrek_75.png");
         //Pirate->ponArchivoRetrato (carpeta_retratos_juego + "pirate1_75.png");
         Shaolin->ponArchivoRetrato (carpeta_retratos_juego + "Shaolin.png");
         //Aristo->ponArchivoRetrato (carpeta_retratos_juego + "aristocrat_75.png");             //LUCASGG
         TecMed->ponArchivoRetrato(carpeta_retratos_juego + "TecnoMedico.png");                  //LUCASGG
-        Harja ->ponArchivoRetrato (carpeta_retratos_juego + "harja_75.png");
+        Franco->ponArchivoRetrato (carpeta_retratos_juego + "Francotirador.png");               //Manuel
         Hunter->ponArchivoRetrato (carpeta_retratos_juego + "Hunter_75.png");
         //Thief ->ponArchivoRetrato (carpeta_retratos_juego + "thief2_75.png");
         PilotoMecha->ponArchivoRetrato(carpeta_retratos_juego + "PilotoMecha.png");
         //
         //Miner ->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");                 //LUCASGG
         Amazona->ponArchivoFicha(carpeta_retratos_juego + "FichaPasado.png");                   //LUCASGG
-        Male  ->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
+        Samurai->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");                  //Manuel
         Patrek->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
         //Pirate->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
         Shaolin->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
         //Aristo->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");                 //LUCASGG
         TecMed->ponArchivoFicha(carpeta_retratos_juego + "FichaFuturo.png");                    //LUCASGG
-        Harja ->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");
+        Franco->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");                   //Manuel
         Hunter->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");
         //Thief ->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");
         PilotoMecha->ponArchivoFicha(carpeta_retratos_juego + "FichaFuturo.png");
         //
         //Miner ->ponIniciativa (20);           //LUCASGG
         Amazona->ponIniciativa(20);             //LUCASGG
-        Male  ->ponIniciativa (19);
+        Samurai->ponIniciativa (19);            //Manuel
         Patrek->ponIniciativa (18);
         //Pirate->ponIniciativa (17);
         Shaolin->ponIniciativa(17);
         //Aristo->ponIniciativa (20);           //LUCASGG
         TecMed->ponIniciativa(20);              //LUCASGG
-        Harja ->ponIniciativa (19);
+        Franco->ponIniciativa (19);             //Manuel
         Hunter->ponIniciativa (18);
         //Thief ->ponIniciativa (17);
         PilotoMecha->ponIniciativa (17);
         //
         //agregaPersonaje (Miner);              //LUCASGG
         agregaPersonaje (Amazona);              //LUCASGG
-        agregaPersonaje (Male);
+        agregaPersonaje (Samurai);              //Manuel
         agregaPersonaje (Patrek);
         //agregaPersonaje (Pirate);
         agregaPersonaje (Shaolin);
         //agregaPersonaje (Aristo);             //LUCASGG
         agregaPersonaje (TecMed);               //LUCASGG
-        agregaPersonaje (Harja);
+        agregaPersonaje (Franco);               //Manuel
         agregaPersonaje (Hunter);
         agregaPersonaje (Thief);
         agregaPersonaje (PilotoMecha);
@@ -992,10 +992,10 @@ namespace juego {
         Amazona->agregaHabilidad(ataqueCabalgado);                          //LUCASGG
         Amazona->agregaHabilidad(defensaConEscudo);                         //LUCASGG
         //
-        Male  ->agregaHabilidad (ataqueEspadaNormal);
-        Male  ->agregaHabilidad (curacionSimple);
-        Male  ->agregaHabilidad (curacionGrupo);
-        Male  ->agregaHabilidad (proyectilMagico);
+        Samurai  ->agregaHabilidad (ataqueEspadaNormal);                    //Manuel
+        Samurai->agregaHabilidad (curacionSimple);                          //Manuel
+        Samurai->agregaHabilidad (curacionGrupo);                           //Manuel
+        Samurai->agregaHabilidad (proyectilMagico);                         //Manuel
         //
         Patrek->agregaHabilidad (ataqueEspadaNormal);
         Patrek->agregaHabilidad (proyectilMagico);
@@ -1017,10 +1017,10 @@ namespace juego {
         TecMed->agregaHabilidad(campoDeCuracion);                           //LUCASGG
         TecMed->agregaHabilidad(drogaDeCombate);                            //LUCASGG
         //
-        Harja ->agregaHabilidad (ataqueEspadaNormal);
-        Harja ->agregaHabilidad (curacionSimple);
-        Harja ->agregaHabilidad (curacionGrupo);
-        Harja ->agregaHabilidad (proyectilMagico);
+        Franco->agregaHabilidad (ataqueEspadaNormal);                       //Manuel
+        Franco->agregaHabilidad (curacionSimple);                           //Manuel
+        Franco->agregaHabilidad (curacionGrupo);                            //Manuel
+        Franco->agregaHabilidad (proyectilMagico);                          //Manuel
         //
         Hunter->agregaHabilidad (ataqueEspadaNormal);
         Hunter->agregaHabilidad (proyectilMagico);
@@ -1310,17 +1310,17 @@ namespace juego {
         Amazona ->agregaReduceDano (danoFisico,           10);         //LUCASGG
         Amazona ->agregaReduceDano (danoMagico,            5);         //LUCASGG
         //
-        Male  ->agregaAtaque     (ataqueCuerpoACuerpo,  50);
-      //Male  ->agregaAtaque     (ataqueADistancia,     50);  No se usa
-        Male  ->agregaAtaque     (ataqueMagico,         50);
-        Male  ->agregaDefensa    (defensaCuerpoACuerpo, 50);
-        Male  ->agregaDefensa    (defensaADistancia,    50);
-        Male  ->agregaDefensa    (defensaMagica,        50);
-        Male  ->agregaReduceDano (danoFisico,            5);
-        Male  ->agregaReduceDano (danoMagico,           10);
-        Male  ->agregaDefensa    (defensaTajoCabalgado, 30);            //LUCASGG        
-        Male  ->agregaDefensa    (defensaArcoVenenoso,  50);            //LUCASGG
-        Male  ->agregaDefensa    (defensaQuirurgica,     5);            //LUCASGG
+        Samurai->agregaAtaque     (ataqueCuerpoACuerpo,  50);                       //Manuel
+      //Samurai  ->agregaAtaque     (ataqueADistancia,     50);  No se usa                       //Manuel
+        Samurai->agregaAtaque     (ataqueMagico,         50);                       //Manuel
+        Samurai->agregaDefensa    (defensaCuerpoACuerpo, 50);                       //Manuel
+        Samurai->agregaDefensa    (defensaADistancia,    50);                       //Manuel
+        Samurai->agregaDefensa    (defensaMagica,        50);                       //Manuel
+        Samurai->agregaReduceDano (danoFisico,            5);                       //Manuel
+        Samurai->agregaReduceDano (danoMagico,           10);                       //Manuel
+        Samurai->agregaDefensa    (defensaTajoCabalgado, 30);            //LUCASGG        
+        Samurai->agregaDefensa    (defensaArcoVenenoso,  50);            //LUCASGG
+        Samurai->agregaDefensa    (defensaQuirurgica,     5);            //LUCASGG
         //                       
         Patrek->agregaAtaque     (ataqueCuerpoACuerpo,  50);
       //Patrek->agregaAtaque     (ataqueADistancia,     50);  No se usa
@@ -1371,17 +1371,17 @@ namespace juego {
         TecMed->agregaReduceDano   (danoFisico,           10);          //LUCASGG
         TecMed->agregaReduceDano   (danoMagico,            5);          //LUCASGG
         //                       
-        Harja ->agregaAtaque     (ataqueCuerpoACuerpo,  50);
-      //Harja ->agregaAtaque     (ataqueADistancia,     50);  No se usa
-        Harja ->agregaAtaque     (ataqueMagico,         50);        
-        Harja ->agregaDefensa    (defensaCuerpoACuerpo, 50);
-        Harja ->agregaDefensa    (defensaADistancia,    50);
-        Harja ->agregaDefensa    (defensaMagica,        50);
-        Harja ->agregaReduceDano (danoFisico,            5);
-        Harja ->agregaReduceDano (danoMagico,           10);
-        Harja ->agregaDefensa    (defensaTajoCabalgado, 30);           //LUCASGG        
-        Harja ->agregaDefensa    (defensaArcoVenenoso,  50);           //LUCASGG
-        Harja ->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
+        Franco->agregaAtaque     (ataqueCuerpoACuerpo,  50);                      //Manuel
+        //Franco ->agregaAtaque     (ataqueADistancia,     50);     no se usa     //Manuel
+        Franco->agregaAtaque     (ataqueMagico,         50);                      //Manuel
+        Franco->agregaDefensa    (defensaCuerpoACuerpo, 50);                      //Manuel
+        Franco->agregaDefensa    (defensaADistancia,    50);                      //Manuel
+        Franco->agregaDefensa    (defensaMagica,        50);                      //Manuel
+        Franco->agregaReduceDano (danoFisico,            5);                      //Manuel
+        Franco->agregaReduceDano (danoMagico,           10);                      //Manuel
+        Franco->agregaDefensa    (defensaTajoCabalgado, 30);           //LUCASGG        
+        Franco->agregaDefensa    (defensaArcoVenenoso,  50);           //LUCASGG
+        Franco->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
         //                       
         Hunter->agregaAtaque     (ataqueCuerpoACuerpo,  50);
       //Hunter->agregaAtaque     (ataqueADistancia,     50);  No se usa
@@ -1555,13 +1555,13 @@ namespace juego {
         //
         //Miner ->ponSitioFicha (Coord {23, 15});       //LUCASGG
         Amazona->ponSitioFicha(Coord{ 23, 15 });        //LUCASGG
-        Male  ->ponSitioFicha (Coord {17, 15});
+        Samurai->ponSitioFicha (Coord {17, 15});        //Manuel
         Patrek->ponSitioFicha (Coord {29, 15});
         //Pirate->ponSitioFicha (Coord {35, 15});
         Shaolin->ponSitioFicha(Coord {35, 15});
         //Aristo->ponSitioFicha (Coord {23, 35});       //LUCASGG
         TecMed->ponSitioFicha(Coord{ 23, 35 });         //LUCASGG
-        Harja ->ponSitioFicha (Coord {17, 35});
+        Franco->ponSitioFicha (Coord {17, 35});         //Manuel
         Hunter->ponSitioFicha (Coord {29, 35});
         //Thief ->ponSitioFicha (Coord {35, 35});
         PilotoMecha->ponSitioFicha (Coord {35, 35});
@@ -1589,13 +1589,13 @@ namespace juego {
         //
         //Aristo   = nullptr;                       //LUCASGG
         TecMed   = nullptr;                         //LUCASGG
-        Harja    = nullptr;
+        Franco = nullptr;                           //Manuel
         Hunter   = nullptr;
         //Thief    = nullptr;
         PilotoMecha = nullptr;
         //Miner    = nullptr;
         Amazona = nullptr;                         //LUCASGG
-        Male     = nullptr;
+        Samurai = nullptr;                         //Manuel
         Patrek   = nullptr;
         //Pirate   = nullptr;
         Shaolin  = nullptr;

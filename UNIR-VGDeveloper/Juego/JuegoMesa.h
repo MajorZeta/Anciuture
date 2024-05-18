@@ -39,12 +39,12 @@ namespace juego {
         *******************************************************************************************/
         //ActorPersonaje * Aristo {};       //LUCASGG
         ActorPersonaje * TecMed{};          //LUCASGG
-        ActorPersonaje * Harja {};
+        ActorPersonaje * Franco{};          //Manuel
         ActorPersonaje * Hunter {};
         ActorPersonaje * Thief {};
         //ActorPersonaje * Miner {};        //LUCASGG
-        ActorPersonaje* Amazona{};          //LUCASGG
-        ActorPersonaje * Male {};
+        ActorPersonaje * Amazona{};          //LUCASGG
+        ActorPersonaje * Samurai{};         //Manuel
         ActorPersonaje * Patrek {};
         ActorPersonaje * Pirate {};
         ActorPersonaje * Shaolin {};
