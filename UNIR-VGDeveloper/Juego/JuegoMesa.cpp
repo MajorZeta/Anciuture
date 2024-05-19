@@ -771,6 +771,24 @@ namespace juego {
         corteZigzag = new Habilidad{
                 L"corte Zigzag",
                 EnfoqueHabilidad::personaje, AccesoHabilidad::directo,   Antagonista::oponente };            //lucasgm
+        cortePreciso = new Habilidad{
+                L"Corte Preciso",
+                EnfoqueHabilidad::personaje,      AccesoHabilidad::directo,   Antagonista::oponente };              //Manuel
+        arremetida = new Habilidad{
+                L"Arremetida",
+                EnfoqueHabilidad::personaje,      AccesoHabilidad::directo,   Antagonista::oponente };            //Manuel
+        voluntadFerrea = new Habilidad{
+                L"Voluntad Férrea",
+                EnfoqueHabilidad::si_mismo,      AccesoHabilidad::ninguno,   Antagonista::si_mismo };            //Manuel
+        headShot = new Habilidad{
+                L"HeadShot",
+                EnfoqueHabilidad::personaje,      AccesoHabilidad::directo,   Antagonista::oponente };            //Manuel
+        balaPrecisa = new Habilidad{
+                L"Bala Paralizante",
+                EnfoqueHabilidad::personaje, AccesoHabilidad::directo,   Antagonista::oponente };            //Manuel
+        balaFragmentada = new Habilidad{
+                L"Bala Fragmentada",
+                EnfoqueHabilidad::area, AccesoHabilidad::directo,   Antagonista::oponente };            //Manuel
 
         //
         ataqueEspadaNormal  ->ponDescripcion (
@@ -819,7 +837,7 @@ namespace juego {
 
         polvoraNegra->ponDescripcion(
             L"El personaje deja un rastro de polvora que confunde a los enemigos.");                                            //lucasgm
-        fuegoLiquido, ->ponDescripcion(
+        fuegoLiquido->ponDescripcion(
             L"El personaje deja un rastro de aceite inflamable y resbaladizo.");                                                //lucasgm
         bombasAceite->ponDescripcion(
             L"El personaje prepara aceite hirviendo que la lanza contra un grupo de enemigos.");                                //lucasgm
@@ -829,6 +847,19 @@ namespace juego {
             L"El personaje hace un corte en area que daña a los enemigos.");                                                    //lucasgm
         corteZigzag->ponDescripcion(
             L"El personaje daña a los enemigos saltando sobre ellos con cuchillas.");                                           //lucasgm
+
+        cortePreciso->ponDescripcion(
+            L"El personaje utiliza su katana para realizar un corte con una gran cantidad de daño.");                           //Manuel
+        arremetida->ponDescripcion(
+            L"El personaje hace una ráfaga de tajos rápidos con baja probabilidad de dar todos.");                              //Manuel
+        voluntadFerrea->ponDescripcion(
+            L"El personaje prepara utiliza un buffo a si mismo que impide que su vida baje de 1 en el siguiente turno.");       //Manuel
+        headShot->ponDescripcion(
+            L"El personaje usa su francotirador para realizar un preciso tiro en la cabeza del enemigo.");                      //Manuel
+        balaPrecisa->ponDescripcion(
+            L"El personaje utiliza una bala paralizante para dejar a un enemigo sin poder moverse durante 2 turnos.");          //Manuel
+        balaFragmentada->ponDescripcion(
+            L"El personaje utiliza su bala fragmentada para atacar en un area del escenario.");                                 //Manuel
 
         //
         ataqueEspadaNormal  ->ponArchivosImagenes (
@@ -888,6 +919,19 @@ namespace juego {
         corteZigzag->ponArchivosImagenes(
             carpeta_habilids_juego + "corte_zigzag.png", carpeta_habilids_juego + "fondo_5.png");   //lucasgm
 
+        cortePreciso->ponArchivosImagenes(
+            carpeta_habilids_juego + "corte_preciso.png", carpeta_habilids_juego + "fondo_5.png");  //Manuel
+        arremetida->ponArchivosImagenes(
+            carpeta_habilids_juego + "arremetida.png", carpeta_habilids_juego + "fondo_5.png");  //Manuel
+        voluntadFerrea->ponArchivosImagenes(
+            carpeta_habilids_juego + "defensa_ferrea.png", carpeta_habilids_juego + "fondo_5.png");  //Manuel
+        headShot->ponArchivosImagenes(
+            carpeta_habilids_juego + "headShot.png", carpeta_habilids_juego + "fondo_5.png");     //Manuel
+        balaPrecisa->ponArchivosImagenes(
+            carpeta_habilids_juego + "balaPrecisa.png", carpeta_habilids_juego + "fondo_5.png");//Manuel
+        balaFragmentada->ponArchivosImagenes(
+            carpeta_habilids_juego + "fragmented.png", carpeta_habilids_juego + "fondo_5.png");   //Manuel
+
         //
         ataqueEspadaNormal  ->ponArchivoSonido (carpeta_sonidos_juego + "Magic Missiles.wav");
         ataqueArco          ->ponArchivoSonido (carpeta_sonidos_juego + "Magic Missiles.wav");
@@ -918,6 +962,13 @@ namespace juego {
         ojosLaser->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");                  //lucasgm
         mordiscoSierra->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");             //lucasgm
         corteZigzag->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");                //lucasgm
+
+        cortePreciso->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");               //Manuel
+        arremetida->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");                 //Manuel
+        voluntadFerrea->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");             //Manuel
+        headShot->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");                   //Manuel
+        balaPrecisa->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");            //Manuel
+        balaFragmentada->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");            //Manuel
         //
         agregaHabilidad (ataqueEspadaNormal);
         agregaHabilidad (ataqueArco);
@@ -948,6 +999,13 @@ namespace juego {
         agregaHabilidad(ojosLaser);                                                                 //lucasgm
         agregaHabilidad(mordiscoSierra);                                                            //lucasgm
         agregaHabilidad(corteZigzag);                                                               //lucasgm
+
+        agregaHabilidad(cortePreciso);                                                              //Manuel
+        agregaHabilidad(arremetida);                                                                //Manuel
+        agregaHabilidad(defensaFerrea);                                                             //Manuel
+        agregaHabilidad(headShot);                                                                  //Manuel
+        agregaHabilidad(balaPrecisa);                                                           //Manuel
+        agregaHabilidad(balaFragmentada);                                                           //Manuel
         //
         /*******************************************************************************************
         /******************************************************************************************/
@@ -1062,10 +1120,9 @@ namespace juego {
         Amazona->agregaHabilidad(ataqueCabalgado);                          //LUCASGG
         Amazona->agregaHabilidad(defensaConEscudo);                         //LUCASGG
         //
-        Samurai  ->agregaHabilidad (ataqueEspadaNormal);                    //Manuel
-        Samurai->agregaHabilidad (curacionSimple);                          //Manuel
-        Samurai->agregaHabilidad (curacionGrupo);                           //Manuel
-        Samurai->agregaHabilidad (proyectilMagico);                         //Manuel
+        Samurai->agregaHabilidad (cortePreciso);                            //Manuel
+        Samurai->agregaHabilidad (arremetida);                              //Manuel
+        Samurai->agregaHabilidad (defensaFerrea);                           //Manuel
         //
         Alquimis->agregaHabilidad(polvoraNegra);                            //lucasgm
         Alquimis->agregaHabilidad(fuegoLiquido);                            //lucasgm
@@ -1091,10 +1148,9 @@ namespace juego {
         TecMed->agregaHabilidad(campoDeCuracion);                           //LUCASGG
         TecMed->agregaHabilidad(drogaDeCombate);                            //LUCASGG
         //
-        Franco->agregaHabilidad (ataqueEspadaNormal);                       //Manuel
-        Franco->agregaHabilidad (curacionSimple);                           //Manuel
-        Franco->agregaHabilidad (curacionGrupo);                            //Manuel
-        Franco->agregaHabilidad (proyectilMagico);                          //Manuel
+        Franco->agregaHabilidad (headShot);                                 //Manuel
+        Franco->agregaHabilidad (balaPrecisa);                          //Manuel
+        Franco->agregaHabilidad (balaFragmentada);                          //Manuel
         //
         //Hunter->agregaHabilidad (ataqueEspadaNormal);
         //Hunter->agregaHabilidad (proyectilMagico);
@@ -1356,6 +1412,42 @@ namespace juego {
         fuegoLiquido->asignaDano(danoMagico, 17);                           //lucasgm
         /*******************************************************************************************
         /******************************************************************************************/
+        cortePreciso->ponCoste(6);                                             //Manuel
+        cortePreciso->ponAlcance(1);
+        cortePreciso->asignaAtaque(ataqueCuerpoACuerpo);
+        cortePreciso->asignaDefensa(defensaCuerpoACuerpo);
+        cortePreciso->asignaDano(danoFisico, 65);
+        //
+        arremetida->ponCoste(8);
+        arremetida->ponAlcance(2);
+        arremetida->asignaAtaque(ataqueCuerpoACuerpo);
+        arremetida->asignaDefensa(defensaCuerpoACuerpo);
+        arremetida->asignaDano(danoFisico, 50);
+        //
+        voluntadFerrea->ponCoste(4);
+        voluntadFerrea->agregaEfectoDefensa(defensaCuerpoACuerpo, 30);
+        voluntadFerrea->agregaEfectoDefensa(defensaADistancia, 30);
+        //
+        headShot->ponCoste(9);
+        headShot->ponAlcance(14);
+        headShot->asignaAtaque(ataqueADistancia);
+        headShot->asignaDefensa(defensaADistancia);
+        headShot->asignaDano(danoFisico, 40);
+        //
+        balaPrecisa->ponCoste(4);
+        balaPrecisa->ponAlcance(20);
+        balaPrecisa->asignaAtaque(ataqueADistancia);
+        balaPrecisa->asignaDefensa(defensaADistancia);
+        balaPrecisa->asignaDano(danoFisico, 10);
+        //
+        balaFragmentada->ponCoste(9);
+        balaFragmentada->ponAlcance(14);
+        balaFragmentada->ponRadioAlcance(7);
+        balaFragmentada->asignaAtaque(ataqueADistancia);
+        balaFragmentada->asignaDefensa(defensaADistancia);
+        balaFragmentada->asignaDano(danoFisico, 15);                           //Manuel
+        /*******************************************************************************************
+        /******************************************************************************************/
     }
 
 
@@ -1425,13 +1517,13 @@ namespace juego {
         Amazona ->agregaReduceDano (danoMagico,            5);         //LUCASGG
         //
         Samurai->agregaAtaque     (ataqueCuerpoACuerpo,  50);                       //Manuel
-      //Samurai  ->agregaAtaque     (ataqueADistancia,     50);  No se usa                       //Manuel
-        Samurai->agregaAtaque     (ataqueMagico,         50);                       //Manuel
-        Samurai->agregaDefensa    (defensaCuerpoACuerpo, 50);                       //Manuel
-        Samurai->agregaDefensa    (defensaADistancia,    50);                       //Manuel
-        Samurai->agregaDefensa    (defensaMagica,        50);                       //Manuel
-        Samurai->agregaReduceDano (danoFisico,            5);                       //Manuel
-        Samurai->agregaReduceDano (danoMagico,           10);                       //Manuel
+      //Samurai  ->agregaAtaque     (ataqueADistancia,     50);  No se usa             //Manuel
+        Samurai->agregaAtaque     (ataqueMagico,         0);                       //Manuel
+        Samurai->agregaDefensa    (defensaCuerpoACuerpo, 60);                       //Manuel
+        Samurai->agregaDefensa    (defensaADistancia,    70);                       //Manuel
+        Samurai->agregaDefensa    (defensaMagica,        30);                       //Manuel
+        Samurai->agregaReduceDano (danoFisico,            10);                       //Manuel
+        Samurai->agregaReduceDano (danoMagico,           5);                       //Manuel
         Samurai->agregaDefensa    (defensaTajoCabalgado, 30);            //LUCASGG        
         Samurai->agregaDefensa    (defensaArcoVenenoso,  50);            //LUCASGG
         Samurai->agregaDefensa    (defensaQuirurgica,     5);            //LUCASGG
@@ -1495,14 +1587,14 @@ namespace juego {
         TecMed->agregaReduceDano   (danoFisico,           10);          //LUCASGG
         TecMed->agregaReduceDano   (danoMagico,            5);          //LUCASGG
         //                       
-        Franco->agregaAtaque     (ataqueCuerpoACuerpo,  50);                      //Manuel
-        //Franco ->agregaAtaque     (ataqueADistancia,     50);     no se usa     //Manuel
-        Franco->agregaAtaque     (ataqueMagico,         50);                      //Manuel
-        Franco->agregaDefensa    (defensaCuerpoACuerpo, 50);                      //Manuel
-        Franco->agregaDefensa    (defensaADistancia,    50);                      //Manuel
-        Franco->agregaDefensa    (defensaMagica,        50);                      //Manuel
-        Franco->agregaReduceDano (danoFisico,            5);                      //Manuel
-        Franco->agregaReduceDano (danoMagico,           10);                      //Manuel
+        //Franco->agregaAtaque     (ataqueCuerpoACuerpo,  50);                    //Manuel
+        Franco ->agregaAtaque     (ataqueADistancia,     50);                     //Manuel
+        Franco->agregaAtaque     (ataqueMagico,         0);                      //Manuel
+        Franco->agregaDefensa    (defensaCuerpoACuerpo, 30);                      //Manuel
+        Franco->agregaDefensa    (defensaADistancia,    55);                      //Manuel
+        Franco->agregaDefensa    (defensaMagica,        40);                      //Manuel
+        Franco->agregaReduceDano (danoFisico,            10);                      //Manuel
+        Franco->agregaReduceDano (danoMagico,           5);                      //Manuel
         Franco->agregaDefensa    (defensaTajoCabalgado, 30);           //LUCASGG        
         Franco->agregaDefensa    (defensaArcoVenenoso,  50);           //LUCASGG
         Franco->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
@@ -1769,6 +1861,13 @@ namespace juego {
         ojosLaser            = nullptr;             //lucasgm
         mordiscoSierra       = nullptr;             //lucasgm
         corteZigzag          = nullptr;             //lucasgm
+
+        cortePreciso = nullptr;                     //Manuel
+        arremetida = nullptr;                       //Manuel
+        voluntadFerrea = nullptr;                   //Manuel
+        headShot = nullptr;                         //Manuel
+        balaPrecisa = nullptr;                      //Manuel
+        balaFragmentada = nullptr;                  //Manuel
 
         //
         ataqueCuerpoACuerpo  = nullptr;

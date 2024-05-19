@@ -99,12 +99,19 @@ namespace juego {
         Habilidad * ataqueCabalgado{};             //LUCASGG
         Habilidad * defensaConEscudo{};            //LUCASGG
 
-        Habilidad* polvoraNegra{};                 //lucasgm
-        Habilidad* fuegoLiquido{};                 //lucasgm
-        Habilidad* bombasAceite{};                 //lucasgm
-        Habilidad* ojosLaser{};                    //lucasgm
-        Habilidad* mordiscoSierra{};               //lucasgm
-        Habilidad* corteZigzag{};                  //lucasgm
+        Habilidad * polvoraNegra{};                 //lucasgm
+        Habilidad * fuegoLiquido{};                 //lucasgm
+        Habilidad * bombasAceite{};                 //lucasgm
+        Habilidad * ojosLaser{};                    //lucasgm
+        Habilidad * mordiscoSierra{};               //lucasgm
+        Habilidad * corteZigzag{};                  //lucasgm
+
+        Habilidad * cortePreciso{};                 //Manuel
+        Habilidad * arremetida{};                 //Manuel
+        Habilidad * voluntadFerrea{};                 //Manuel
+        Habilidad * headShot{};                    //Manuel
+        Habilidad * balaPrecisa{};               //Manuel
+        Habilidad * balaFragmentada{};                  //Manuel
         /*******************************************************************************************
         /******************************************************************************************/
 
