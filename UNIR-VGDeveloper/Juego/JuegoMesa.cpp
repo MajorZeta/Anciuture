@@ -541,14 +541,14 @@ namespace juego {
         //Patrek = new ActorPersonaje {this, LadoTablero::Izquierda, 2, L"Patrek"};
         //Alquimis = new ActorPersonaje {this, LadoTablero::Izquierda, 2, L"Alquimis"};           //lucasgm
         //Pirate = new ActorPersonaje {this, LadoTablero::Izquierda, 3, L"Pirate"};
-        Shaolin= new ActorPersonaje { this, LadoTablero::Izquierda,3, L"Shaolin" };
+        Shaolin= new ActorPersonaje { this, LadoTablero::Izquierda,2, L"Shaolin" };
         //Aristo = new ActorPersonaje {this, LadoTablero::Derecha,   0, L"Aristo"};             //LUCASGG
         TecMed = new ActorPersonaje{ this, LadoTablero::Derecha,   0, L"TecMed" };              //LUCASGG
         Franco  = new ActorPersonaje {this, LadoTablero::Derecha,   1, L"Franco"};              //Manuel
         //Hunter = new ActorPersonaje {this, LadoTablero::Derecha,   2, L"Hunter"};
         //Makhan = new ActorPersonaje{ this, LadoTablero::Derecha,   1, L"Makhan" };              //lucasgm
         //Thief  = new ActorPersonaje {this, LadoTablero::Derecha,   3, L"Thief"};
-        PilotoMecha = new ActorPersonaje { this, LadoTablero::Derecha,  3, L"Piloto"};
+        PilotoMecha = new ActorPersonaje { this, LadoTablero::Derecha,  2, L"Piloto"};
         //
         //Miner ->ponArchivoRetrato (carpeta_retratos_juego + "miner1_75.png");                 //LUCASGG
         Amazona->ponArchivoRetrato(carpeta_retratos_juego + "Amazona.png");                     //LUCASGG
@@ -1004,7 +1004,7 @@ namespace juego {
         agregaHabilidad(arremetida);                                                                //Manuel
         agregaHabilidad(defensaFerrea);                                                             //Manuel
         agregaHabilidad(headShot);                                                                  //Manuel
-        agregaHabilidad(balaPrecisa);                                                               //Manuel
+        agregaHabilidad(balaPrecisa);                                                           //Manuel
         agregaHabilidad(balaFragmentada);                                                           //Manuel
         //
         /*******************************************************************************************
@@ -1379,7 +1379,7 @@ namespace juego {
         //ojosLaser->asignaAtaque(ataqueCuerpoACuerpo);
         //ojosLaser->asignaDefensa(defensaCuerpoACuerpo);
         //ojosLaser->asignaDano(danoMagico, 50);
-        ////
+        //
         //mordiscoSierra->ponCoste(6);
         //mordiscoSierra->ponAlcance(2);
         //mordiscoSierra->asignaAtaque(ataqueCuerpoACuerpo);
@@ -1797,7 +1797,7 @@ namespace juego {
         //
         tablero ()->asignaSonidoEstablece (carpeta_sonidos_juego + "Metal Click.wav", 100);
         tablero ()->asignaSonidoDesplaza  (carpeta_sonidos_juego + "SnowWalk.ogg",    100);
-        musica  ()->asignaMusica          (carpeta_sonidos_juego + "Track_1.ogg",     0);
+        musica  ()->asignaMusica          (carpeta_sonidos_juego + "Track_1.ogg",     100);
         //
         agregaNombreAlumno (L"Joan Mayor Heredia");
         agregaNombreAlumno (L"Celia Serrano Chaparro");
