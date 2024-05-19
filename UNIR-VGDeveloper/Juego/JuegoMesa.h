@@ -40,12 +40,14 @@ namespace juego {
         //ActorPersonaje * Aristo {};       //LUCASGG
         ActorPersonaje * TecMed{};          //LUCASGG
         ActorPersonaje * Franco{};          //Manuel
-        ActorPersonaje * Hunter {};
+        //ActorPersonaje * Hunter {};
+        ActorPersonaje * Makhan{};          //lucasgm
         ActorPersonaje * Thief {};
         //ActorPersonaje * Miner {};        //LUCASGG
         ActorPersonaje * Amazona{};          //LUCASGG
         ActorPersonaje * Samurai{};         //Manuel
-        ActorPersonaje * Patrek {};
+        //ActorPersonaje * Patrek {};
+        ActorPersonaje * Alquimis {};       //lucasgm
         ActorPersonaje * Pirate {};
         ActorPersonaje * Shaolin {};
         ActorPersonaje * PilotoMecha {};
@@ -96,6 +98,13 @@ namespace juego {
         Habilidad * ataqueArcoConVeneno{};         //LUCASGG
         Habilidad * ataqueCabalgado{};             //LUCASGG
         Habilidad * defensaConEscudo{};            //LUCASGG
+
+        Habilidad* polvoraNegra{};                 //lucasgm
+        Habilidad* fuegoLiquido{};                 //lucasgm
+        Habilidad* bombasAceite{};                 //lucasgm
+        Habilidad* ojosLaser{};                    //lucasgm
+        Habilidad* mordiscoSierra{};               //lucasgm
+        Habilidad* corteZigzag{};                  //lucasgm
         /*******************************************************************************************
         /******************************************************************************************/
 

@@ -538,65 +538,75 @@ namespace juego {
         //Miner  = new ActorPersonaje {this, LadoTablero::Izquierda, 0, L"Miner"};              //LUCASGG
         Amazona = new ActorPersonaje{ this, LadoTablero::Izquierda, 0, L"Amazona" };            //LUCASGG
         Samurai = new ActorPersonaje {this, LadoTablero::Izquierda, 1, L"Samurai"};             //Manuel
-        Patrek = new ActorPersonaje {this, LadoTablero::Izquierda, 2, L"Patrek"};
+        //Patrek = new ActorPersonaje {this, LadoTablero::Izquierda, 2, L"Patrek"};
+        Alquimis = new ActorPersonaje {this, LadoTablero::Izquierda, 2, L"Alquimis"};           //lucasgm
         //Pirate = new ActorPersonaje {this, LadoTablero::Izquierda, 3, L"Pirate"};
         Shaolin= new ActorPersonaje { this, LadoTablero::Izquierda,3, L"Shaolin" };
         //Aristo = new ActorPersonaje {this, LadoTablero::Derecha,   0, L"Aristo"};             //LUCASGG
         TecMed = new ActorPersonaje{ this, LadoTablero::Derecha,   0, L"TecMed" };              //LUCASGG
         Franco  = new ActorPersonaje {this, LadoTablero::Derecha,   1, L"Franco"};              //Manuel
-        Hunter = new ActorPersonaje {this, LadoTablero::Derecha,   2, L"Hunter"};
+        //Hunter = new ActorPersonaje {this, LadoTablero::Derecha,   2, L"Hunter"};
+        Makhan = new ActorPersonaje{ this, LadoTablero::Derecha,   1, L"Makhan" };              //lucasgm
         //Thief  = new ActorPersonaje {this, LadoTablero::Derecha,   3, L"Thief"};
         PilotoMecha = new ActorPersonaje { this, LadoTablero::Derecha,  3, L"Piloto"};
         //
         //Miner ->ponArchivoRetrato (carpeta_retratos_juego + "miner1_75.png");                 //LUCASGG
         Amazona->ponArchivoRetrato(carpeta_retratos_juego + "Amazona.png");                     //LUCASGG
         Samurai->ponArchivoRetrato (carpeta_retratos_juego + "Samurai.png");                    //Manuel
-        Patrek->ponArchivoRetrato (carpeta_retratos_juego + "patrek_75.png");
+        //Patrek->ponArchivoRetrato (carpeta_retratos_juego + "patrek_75.png");
+        Alquimis->ponArchivoRetrato (carpeta_retratos_juego + "Alquimista.png");                 //lucasgm
         //Pirate->ponArchivoRetrato (carpeta_retratos_juego + "pirate1_75.png");
         Shaolin->ponArchivoRetrato (carpeta_retratos_juego + "Shaolin.png");
         //Aristo->ponArchivoRetrato (carpeta_retratos_juego + "aristocrat_75.png");             //LUCASGG
         TecMed->ponArchivoRetrato(carpeta_retratos_juego + "TecnoMedico.png");                  //LUCASGG
         Franco->ponArchivoRetrato (carpeta_retratos_juego + "Francotirador.png");               //Manuel
-        Hunter->ponArchivoRetrato (carpeta_retratos_juego + "Hunter_75.png");
+        //Hunter->ponArchivoRetrato (carpeta_retratos_juego + "Hunter_75.png");
+        Makhan->ponArchivoFicha (carpeta_retratos_juego + "Makhanadeinos.png");                     //lucasgm
         //Thief ->ponArchivoRetrato (carpeta_retratos_juego + "thief2_75.png");
         PilotoMecha->ponArchivoRetrato(carpeta_retratos_juego + "PilotoMecha.png");
         //
         //Miner ->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");                 //LUCASGG
         Amazona->ponArchivoFicha(carpeta_retratos_juego + "FichaPasado.png");                   //LUCASGG
         Samurai->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");                  //Manuel
-        Patrek->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
+        //Patrek->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
+        Alquimis->ponArchivoFicha (carpeta_retratos_juego + "ficha_roja.png");                   //lucasgm
         //Pirate->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
         Shaolin->ponArchivoFicha (carpeta_retratos_juego + "FichaPasado.png");
         //Aristo->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");                 //LUCASGG
         TecMed->ponArchivoFicha(carpeta_retratos_juego + "FichaFuturo.png");                    //LUCASGG
         Franco->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");                   //Manuel
-        Hunter->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");
+        //Hunter->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");
+        Makhan->ponArchivoFicha(carpeta_retratos_juego + "ficha_azul.png");                     //lucasgm
         //Thief ->ponArchivoFicha (carpeta_retratos_juego + "FichaFuturo.png");
         PilotoMecha->ponArchivoFicha(carpeta_retratos_juego + "FichaFuturo.png");
         //
         //Miner ->ponIniciativa (20);           //LUCASGG
         Amazona->ponIniciativa(20);             //LUCASGG
         Samurai->ponIniciativa (19);            //Manuel
-        Patrek->ponIniciativa (18);
+        //Patrek->ponIniciativa (18);
+        Alquimis->ponIniciativa(18);            //lucasgm
         //Pirate->ponIniciativa (17);
         Shaolin->ponIniciativa(17);
         //Aristo->ponIniciativa (20);           //LUCASGG
         TecMed->ponIniciativa(20);              //LUCASGG
         Franco->ponIniciativa (19);             //Manuel
-        Hunter->ponIniciativa (18);
+        //Hunter->ponIniciativa (18);
+        Makhan->ponIniciativa(19);              //lucasgm
         //Thief ->ponIniciativa (17);
         PilotoMecha->ponIniciativa (17);
         //
         //agregaPersonaje (Miner);              //LUCASGG
         agregaPersonaje (Amazona);              //LUCASGG
         agregaPersonaje (Samurai);              //Manuel
-        agregaPersonaje (Patrek);
+        //agregaPersonaje (Patrek);
+        agregaPersonaje(Alquimis);              //lucasgm
         //agregaPersonaje (Pirate);
         agregaPersonaje (Shaolin);
         //agregaPersonaje (Aristo);             //LUCASGG
         agregaPersonaje (TecMed);               //LUCASGG
         agregaPersonaje (Franco);               //Manuel
-        agregaPersonaje (Hunter);
+        //agregaPersonaje (Hunter);
+        agregaPersonaje(Makhan);                //lucasgm
         agregaPersonaje (Thief);
         agregaPersonaje (PilotoMecha);
         //
@@ -742,7 +752,25 @@ namespace juego {
                 EnfoqueHabilidad::personaje, AccesoHabilidad::directo,   Antagonista::oponente };           //LUCASGG
         defensaConEscudo = new Habilidad{
                 L"Defensa con escudo",
-                EnfoqueHabilidad::si_mismo, AccesoHabilidad::ninguno,   Antagonista::si_mismo };            //LUCASGG
+                EnfoqueHabilidad::si_mismo,  AccesoHabilidad::ninguno,   Antagonista::si_mismo };            //LUCASGG
+        polvoraNegra = new Habilidad{
+                L"polvora Negra",
+                EnfoqueHabilidad::area,      AccesoHabilidad::indirecto,   Antagonista::aliado };              //lucasgm
+        fuegoLiquido = new Habilidad{
+                L"fuego Liquido",
+                EnfoqueHabilidad::area,      AccesoHabilidad::indirecto,   Antagonista::oponente };            //lucasgm
+        bombasAceite = new Habilidad{
+                L"bombas de Aceite",
+                EnfoqueHabilidad::area,      AccesoHabilidad::directo,   Antagonista::oponente };            //lucasgm
+        ojosLaser = new Habilidad{
+                L"ojos Laser",
+                EnfoqueHabilidad::area,      AccesoHabilidad::directo,   Antagonista::oponente };            //lucasgm
+        mordiscoSierra = new Habilidad{
+                L"mordisco de Sierra",
+                EnfoqueHabilidad::personaje, AccesoHabilidad::directo,   Antagonista::oponente };            //lucasgm
+        corteZigzag = new Habilidad{
+                L"corte Zigzag",
+                EnfoqueHabilidad::personaje, AccesoHabilidad::directo,   Antagonista::oponente };            //lucasgm
 
         //
         ataqueEspadaNormal  ->ponDescripcion (
@@ -789,6 +817,19 @@ namespace juego {
         defensaConEscudo->ponDescripcion(
             L"El personaje aumenta su defensa hasta su próximo ronda.");                                                        //LUCASGG
 
+        polvoraNegra->ponDescripcion(
+            L"El personaje deja un rastro de polvora que confunde a los enemigos.");                                            //lucasgm
+        fuegoLiquido, ->ponDescripcion(
+            L"El personaje deja un rastro de aceite inflamable y resbaladizo.");                                                //lucasgm
+        bombasAceite->ponDescripcion(
+            L"El personaje prepara aceite hirviendo que la lanza contra un grupo de enemigos.");                                //lucasgm
+        ojosLaser->ponDescripcion(
+            L"El personaje usa sus ojos laser para quemar a los enemigos.");                                                    //lucasgm
+        mordiscoSierra->ponDescripcion(
+            L"El personaje hace un corte en area que daña a los enemigos.");                                                    //lucasgm
+        corteZigzag->ponDescripcion(
+            L"El personaje daña a los enemigos saltando sobre ellos con cuchillas.");                                           //lucasgm
+
         //
         ataqueEspadaNormal  ->ponArchivosImagenes (
                 carpeta_habilids_juego + "espada.png",          carpeta_habilids_juego + "fondo_5.png");
@@ -834,6 +875,19 @@ namespace juego {
         defensaConEscudo->ponArchivosImagenes(
             carpeta_habilids_juego + "escudo.png", carpeta_habilids_juego + "fondo_5.png");         //LUCASGG
 
+        polvoraNegra->ponArchivosImagenes(
+            carpeta_habilids_juego + "polvora_negra.png", carpeta_habilids_juego + "fondo_5.png");  //lucasgm
+        fuegoLiquido->ponArchivosImagenes(
+            carpeta_habilids_juego + "fuego_liquido.png", carpeta_habilids_juego + "fondo_5.png");  //lucasgm
+        bombasAceite->ponArchivosImagenes(
+            carpeta_habilids_juego + "bombas_aceite.png", carpeta_habilids_juego + "fondo_5.png");  //lucasgm
+        ojosLaser->ponArchivosImagenes(
+            carpeta_habilids_juego + "ojos_laser.png", carpeta_habilids_juego + "fondo_5.png");     //lucasgm
+        mordiscoSierra->ponArchivosImagenes(
+            carpeta_habilids_juego + "mordisco_sierra.png", carpeta_habilids_juego + "fondo_5.png");//lucasgm
+        corteZigzag->ponArchivosImagenes(
+            carpeta_habilids_juego + "corte_zigzag.png", carpeta_habilids_juego + "fondo_5.png");   //lucasgm
+
         //
         ataqueEspadaNormal  ->ponArchivoSonido (carpeta_sonidos_juego + "Magic Missiles.wav");
         ataqueArco          ->ponArchivoSonido (carpeta_sonidos_juego + "Magic Missiles.wav");
@@ -857,6 +911,13 @@ namespace juego {
         ataqueArcoConVeneno->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");        //LUCASGG
         ataqueCabalgado->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");            //LUCASGG
         defensaConEscudo->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");           //LUCASGG
+
+        polvoraNegra->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");               //lucasgm
+        fuegoLiquido->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");               //lucasgm
+        bombasAceite->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");               //lucasgm
+        ojosLaser->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");                  //lucasgm
+        mordiscoSierra->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");             //lucasgm
+        corteZigzag->ponArchivoSonido(carpeta_sonidos_juego + "Magic Missiles.wav");                //lucasgm
         //
         agregaHabilidad (ataqueEspadaNormal);
         agregaHabilidad (ataqueArco);
@@ -880,6 +941,13 @@ namespace juego {
         agregaHabilidad(ataqueArcoConVeneno);                                                       //LUCASGG
         agregaHabilidad(ataqueCabalgado);                                                           //LUCASGG
         agregaHabilidad(defensaConEscudo);                                                          //LUCASGG
+
+        agregaHabilidad(polvoraNegra);                                                              //lucasgm
+        agregaHabilidad(fuegoLiquido);                                                              //lucasgm
+        agregaHabilidad(bombasAceite);                                                              //lucasgm
+        agregaHabilidad(ojosLaser);                                                                 //lucasgm
+        agregaHabilidad(mordiscoSierra);                                                            //lucasgm
+        agregaHabilidad(corteZigzag);                                                               //lucasgm
         //
         /*******************************************************************************************
         /******************************************************************************************/
@@ -940,6 +1008,8 @@ namespace juego {
         defensaArcoVenenoso = new TipoDefensa{ L"Defensa venenosa" };                   //LUCASGG
         defensaTajoCabalgado = new TipoDefensa{ L"Defensa contra ataque cabalgado" };   //LUCASGG
 
+
+
         //
         agregaAtaque  (ataqueCuerpoACuerpo );
         agregaAtaque  (ataqueADistancia);
@@ -997,9 +1067,13 @@ namespace juego {
         Samurai->agregaHabilidad (curacionGrupo);                           //Manuel
         Samurai->agregaHabilidad (proyectilMagico);                         //Manuel
         //
-        Patrek->agregaHabilidad (ataqueEspadaNormal);
-        Patrek->agregaHabilidad (proyectilMagico);
-        Patrek->agregaHabilidad (bolaFuego);
+        Alquimis->agregaHabilidad(polvoraNegra);                            //lucasgm
+        Alquimis->agregaHabilidad(fuegoLiquido);                            //lucasgm
+        Alquimis->agregaHabilidad(bombasAceite);                            //lucasgm   
+        //
+        //Patrek->agregaHabilidad (ataqueEspadaNormal);
+        //Patrek->agregaHabilidad (proyectilMagico);
+        //Patrek->agregaHabilidad (bolaFuego);
         //
         /*Pirate->agregaHabilidad (ataqueEspadaNormal);
         Pirate->agregaHabilidad (ataqueArco);
@@ -1022,9 +1096,12 @@ namespace juego {
         Franco->agregaHabilidad (curacionGrupo);                            //Manuel
         Franco->agregaHabilidad (proyectilMagico);                          //Manuel
         //
-        Hunter->agregaHabilidad (ataqueEspadaNormal);
-        Hunter->agregaHabilidad (proyectilMagico);
-        Hunter->agregaHabilidad (bolaFuego);
+        //Hunter->agregaHabilidad (ataqueEspadaNormal);
+        //Hunter->agregaHabilidad (proyectilMagico);
+        //Hunter->agregaHabilidad (bolaFuego);
+        Makhan->agregaHabilidad(ojosLaser);                                 //lucasgm
+        Makhan->agregaHabilidad(mordiscoSierra);                            //lucasgm
+        Makhan->agregaHabilidad(corteZigzag);                               //lucasgm
         //
         /*Thief ->agregaHabilidad (ataqueEspadaNormal);
         Thief ->agregaHabilidad (ataqueArco);
@@ -1240,6 +1317,43 @@ namespace juego {
         drogaDeCombate->ponAlcance(3);                                      //LUCASGG
         drogaDeCombate->asignaCuracion(40);                                 //LUCASGG
         //
+        ojosLaser->ponCoste(9);                                             //lucasgm
+        ojosLaser->ponAlcance(4);
+        ojosLaser->ponRadioAlcance(2);
+        ojosLaser->asignaAtaque(ataqueCuerpoACuerpo);
+        ojosLaser->asignaDefensa(defensaCuerpoACuerpo);
+        ojosLaser->asignaDano(danoMagico, 50);
+        //
+        mordiscoSierra->ponCoste(6);
+        mordiscoSierra->ponAlcance(2);
+        mordiscoSierra->asignaAtaque(ataqueCuerpoACuerpo);
+        mordiscoSierra->asignaDefensa(defensaCuerpoACuerpo);
+        mordiscoSierra->asignaDano(danoFisico, 45);
+        //
+        corteZigzag->ponCoste(10);
+        corteZigzag->ponAlcance(3);
+        corteZigzag->asignaAtaque(ataqueCuerpoACuerpo);
+        corteZigzag->asignaDefensa(defensaCuerpoACuerpo);
+        corteZigzag->asignaDano(danoFisico, 70);
+        //
+        bombasAceite->ponCoste(9);
+        bombasAceite->ponAlcance(12);
+        bombasAceite->ponRadioAlcance(4);
+        bombasAceite->asignaAtaque(ataqueMagico);
+        bombasAceite->asignaDefensa(defensaMagica);
+        bombasAceite->asignaDano(danoMagico, 37.5);
+        //
+        polvoraNegra->ponCoste(8);
+        polvoraNegra->ponAlcance(5);
+        polvoraNegra->ponRadioAlcance(3.4);
+        polvoraNegra->asignaCuracion(38);
+        //
+        fuegoLiquido->ponCoste(9);
+        fuegoLiquido->ponAlcance(14);
+        fuegoLiquido->ponRadioAlcance(7);
+        fuegoLiquido->asignaAtaque(ataqueMagico);
+        fuegoLiquido->asignaDefensa(defensaMagica);
+        fuegoLiquido->asignaDano(danoMagico, 17);                           //lucasgm
         /*******************************************************************************************
         /******************************************************************************************/
     }
@@ -1322,17 +1436,27 @@ namespace juego {
         Samurai->agregaDefensa    (defensaArcoVenenoso,  50);            //LUCASGG
         Samurai->agregaDefensa    (defensaQuirurgica,     5);            //LUCASGG
         //                       
-        Patrek->agregaAtaque     (ataqueCuerpoACuerpo,  50);
-      //Patrek->agregaAtaque     (ataqueADistancia,     50);  No se usa
-        Patrek->agregaAtaque     (ataqueMagico,         70);        
-        Patrek->agregaDefensa    (defensaCuerpoACuerpo, 40);
-        Patrek->agregaDefensa    (defensaADistancia,    40);
-        Patrek->agregaDefensa    (defensaMagica,        30);
-        Patrek->agregaReduceDano (danoFisico,            0);
-        Patrek->agregaReduceDano (danoMagico,           15);
-        Patrek->agregaDefensa    (defensaTajoCabalgado, 30);           //LUCASGG        
-        Patrek->agregaDefensa    (defensaArcoVenenoso,  40);           //LUCASGG
-        Patrek->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
+        //Patrek->agregaAtaque     (ataqueCuerpoACuerpo,  50);
+        //Patrek->agregaAtaque     (ataqueADistancia,     50);  No se usa
+        //Patrek->agregaAtaque     (ataqueMagico,         70);        
+        //Patrek->agregaDefensa    (defensaCuerpoACuerpo, 40);
+        //Patrek->agregaDefensa    (defensaADistancia,    40);
+        //Patrek->agregaDefensa    (defensaMagica,        30);
+        //Patrek->agregaReduceDano (danoFisico,            0);
+        //Patrek->agregaReduceDano (danoMagico,           15);
+        //Patrek->agregaDefensa    (defensaTajoCabalgado, 30);           //LUCASGG        
+        //Patrek->agregaDefensa    (defensaArcoVenenoso,  40);           //LUCASGG
+        //Patrek->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
+        Alquimis->agregaAtaque     (ataqueCuerpoACuerpo,  20);           //lucasgm
+        Alquimis->agregaAtaque     (ataqueADistancia,     68);           //lucasgm
+        Alquimis->agregaDefensa    (defensaCuerpoACuerpo, 30);           //lucasgm
+        Alquimis->agregaDefensa    (defensaADistancia,    40);           //lucasgm
+        Alquimis->agregaDefensa    (defensaMagica,        60);           //lucasgm
+        Alquimis->agregaReduceDano (danoFisico,            3);           //lucasgm
+        Alquimis->agregaReduceDano (danoMagico,           13);           //lucasgm
+        Alquimis->agregaDefensa    (defensaTajoCabalgado, 30);           //lucasgm        
+        Alquimis->agregaDefensa    (defensaArcoVenenoso,  50);           //lucasgm
+        Alquimis->agregaDefensa    (defensaQuirurgica,     5);           //lucasgm
         //                       
         /*Pirate->agregaAtaque     (ataqueCuerpoACuerpo,  60);
         Pirate->agregaAtaque     (ataqueADistancia,     70);        
@@ -1383,17 +1507,28 @@ namespace juego {
         Franco->agregaDefensa    (defensaArcoVenenoso,  50);           //LUCASGG
         Franco->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
         //                       
-        Hunter->agregaAtaque     (ataqueCuerpoACuerpo,  50);
-      //Hunter->agregaAtaque     (ataqueADistancia,     50);  No se usa
-        Hunter->agregaAtaque     (ataqueMagico,         70);        
-        Hunter->agregaDefensa    (defensaCuerpoACuerpo, 40);
-        Hunter->agregaDefensa    (defensaADistancia,    40);
-        Hunter->agregaDefensa    (defensaMagica,        30);
-        Hunter->agregaReduceDano (danoFisico,            0);
-        Hunter->agregaReduceDano (danoMagico,           15);
-        Hunter->agregaDefensa    (defensaTajoCabalgado, 30);           //LUCASGG        
-        Hunter->agregaDefensa    (defensaArcoVenenoso,  40);           //LUCASGG
-        Hunter->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
+        //Hunter->agregaAtaque     (ataqueCuerpoACuerpo,  50);
+        //Hunter->agregaAtaque     (ataqueADistancia,     50);  No se usa
+        // Hunter->agregaAtaque     (ataqueMagico,         70);        
+        //Hunter->agregaDefensa    (defensaCuerpoACuerpo, 40);
+        //Hunter->agregaDefensa    (defensaADistancia,    40);
+        //Hunter->agregaDefensa    (defensaMagica,        30);
+        //Hunter->agregaReduceDano (danoFisico,            0);
+        //Hunter->agregaReduceDano (danoMagico,           15);
+        //Hunter->agregaDefensa    (defensaTajoCabalgado, 30);           //LUCASGG        
+        //Hunter->agregaDefensa    (defensaArcoVenenoso,  40);           //LUCASGG
+        //Hunter->agregaDefensa    (defensaQuirurgica,     5);           //LUCASGG
+        //
+        Makhan->agregaAtaque     (ataqueCuerpoACuerpo,  85);           //lucasgm
+        Makhan->agregaAtaque     (ataqueADistancia,     40);           //lucasgm
+        Makhan->agregaDefensa    (defensaCuerpoACuerpo, 55);           //lucasgm
+        Makhan->agregaDefensa    (defensaADistancia,    55);           //lucasgm
+        Makhan->agregaDefensa    (defensaMagica,        20);           //lucasgm
+        Makhan->agregaReduceDano (danoFisico,           10);           //lucasgm
+        Makhan->agregaReduceDano (danoMagico,            5);           //lucasgm
+        Makhan->agregaDefensa    (defensaTajoCabalgado, 30);           //lucasgm        
+        Makhan->agregaDefensa    (defensaArcoVenenoso,  50);           //lucasgm
+        Makhan->agregaDefensa    (defensaQuirurgica,    5);            //lucasgm
         //                       
         /*Thief ->agregaAtaque     (ataqueCuerpoACuerpo,  60);
         Thief ->agregaAtaque     (ataqueADistancia,     70);        
@@ -1556,13 +1691,15 @@ namespace juego {
         //Miner ->ponSitioFicha (Coord {23, 15});       //LUCASGG
         Amazona->ponSitioFicha(Coord{ 23, 15 });        //LUCASGG
         Samurai->ponSitioFicha (Coord {17, 15});        //Manuel
-        Patrek->ponSitioFicha (Coord {29, 15});
+        //Patrek->ponSitioFicha (Coord {29, 15});
+        Alquimis->ponSitioFicha(Coord{ 29, 15 });       //lucasgm
         //Pirate->ponSitioFicha (Coord {35, 15});
         Shaolin->ponSitioFicha(Coord {35, 15});
         //Aristo->ponSitioFicha (Coord {23, 35});       //LUCASGG
         TecMed->ponSitioFicha(Coord{ 23, 35 });         //LUCASGG
         Franco->ponSitioFicha (Coord {17, 35});         //Manuel
-        Hunter->ponSitioFicha (Coord {29, 35});
+        //Hunter->ponSitioFicha (Coord {29, 35});
+        Makhan->ponSitioFicha(Coord{ 29, 35 });         //lucasgm
         //Thief ->ponSitioFicha (Coord {35, 35});
         PilotoMecha->ponSitioFicha (Coord {35, 35});
         //
@@ -1590,13 +1727,15 @@ namespace juego {
         //Aristo   = nullptr;                       //LUCASGG
         TecMed   = nullptr;                         //LUCASGG
         Franco = nullptr;                           //Manuel
-        Hunter   = nullptr;
+        //Hunter   = nullptr;
+        Alquimis = nullptr;                         //lucasgm
         //Thief    = nullptr;
         PilotoMecha = nullptr;
         //Miner    = nullptr;
-        Amazona = nullptr;                         //LUCASGG
-        Samurai = nullptr;                         //Manuel
-        Patrek   = nullptr;
+        Amazona = nullptr;                          //LUCASGG
+        Samurai = nullptr;                          //Manuel
+        //Patrek   = nullptr;
+        Makhan = nullptr;                           //lucasgm
         //Pirate   = nullptr;
         Shaolin  = nullptr;
         //
@@ -1608,6 +1747,7 @@ namespace juego {
         curacionGrupo        = nullptr;
         proyectilMagico      = nullptr;
         bolaFuego            = nullptr;
+        
         palmaChi             = nullptr;
         pocionVenenosa       = nullptr;
         rezo                 = nullptr;
@@ -1622,6 +1762,13 @@ namespace juego {
         ataqueArcoConVeneno  = nullptr;             //LUCASGG
         ataqueCabalgado      = nullptr;             //LUCASGG
         defensaConEscudo     = nullptr;             //LUCASGG 
+
+        polvoraNegra         = nullptr;             //lucasgm
+        fuegoLiquido         = nullptr;             //lucasgm
+        bombasAceite         = nullptr;             //lucasgm
+        ojosLaser            = nullptr;             //lucasgm
+        mordiscoSierra       = nullptr;             //lucasgm
+        corteZigzag          = nullptr;             //lucasgm
 
         //
         ataqueCuerpoACuerpo  = nullptr;
