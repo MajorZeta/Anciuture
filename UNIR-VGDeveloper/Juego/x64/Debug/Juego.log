@@ -1,4 +1,8 @@
-﻿  JuegoMesa.cpp
-  Juego.vcxproj -> D:\Projects\GitHub\Anciuture\UNIR-VGDeveloper\Juego\x64\Debug\Juego.exe
+﻿  pch.cpp
+  JuegoMesa.cpp
+  Source.cpp
+  principal.cpp
+  Generando código...
+  Juego.vcxproj -> D:\Downloads\Anciuture-1b86841eddfdd80197bc85de5bf5d718d92d31d2\Anciuture-1b86841eddfdd80197bc85de5bf5d718d92d31d2\UNIR-VGDeveloper\Juego\x64\Debug\Juego.exe
   Copiando de la biblioteca 'openal32.dll' en el directorio de ejecución:
           1 archivo(s) copiado(s).
